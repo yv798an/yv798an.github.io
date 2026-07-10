@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="YV Embedded Software Engineer Portfolio - RT-Thread, RISC-V, ESP32-C6, MQTT IoT Gateway">
+
+    <meta name="author" content="Yuan Changyu">
+
+    <title>
+        YV | Embedded Software Engineer
+    </title>
+
+
+    <!-- GitHub Pages CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container">
+
+<nav>
+
+
+<a href="./" class="logo">
+
+<i class="fa-solid fa-microchip"></i>
+
+Embedded
+
+</a>
+
+
+<div class="nav-links">
+
+<a href="#tech">
+技术栈
+</a>
+
+
+<a href="#projects">
+项目
+</a>
+
+
+<a href="#contact">
+联系
+</a>
+
+
+</div>
+
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+<main class="container">
+
+
+
+<section class="hero">
+
+
+<h1>
+YV
+</h1>
+
+
+<p class="subtitle">
+嵌入式软件工程师
+</p>
+
+
+
+<p class="summary-tags">
+
+
+<span class="s-tag">
+<i class="fa-solid fa-layer-group"></i>
+嵌入式系统
+</span>
+
+
+<span class="s-tag">
+<i class="fa-solid fa-microchip"></i>
+RISC-V
+</span>
+
+
+
+<span class="s-tag">
+<i class="fa-solid fa-cubes"></i>
+RTOS
+</span>
+
+
+
+<span class="s-tag">
+<i class="fa-solid fa-network-wired"></i>
+IoT Gateway
+</span>
+
+
+
+<span class="s-tag">
+<i class="fa-solid fa-cloud"></i>
+Edge Computing
+</span>
+
+
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="section" id="tech">
+
+
+<h2 class="section-title">
+核心技术栈
+</h2>
+
+
+
+<div class="tech-grid">
+
+
+
+<div class="tech-card">
+
+<h3>
+<i class="fa-solid fa-microchip"></i>
+RISC-V MCU
+</h3>
+
+
+<p>
+CH32V307 · ESP32-C6
+<br>
+RISC-V架构 · 异构芯片协同
+</p>
+
+
+</div>
+
+
+
+
+<div class="tech-card">
+
+
+<h3>
+<i class="fa-solid fa-cubes"></i>
+RTOS
+</h3>
+
+
+<p>
+RT-Thread
+<br>
+线程调度 · IPC · 互斥锁
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="tech-card">
+
+<h3>
+<i class="fa-solid fa-code"></i>
+Firmware
+</h3>
+
+
+<p>
+UART · I2C · SPI · ADC · GPIO
+<br>
+驱动开发 · 外设控制
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="tech-card">
+
+
+<h3>
+<i class="fa-solid fa-wifi"></i>
+IoT Communication
+</h3>
+
+
+<p>
+MQTT · TCP/IP · WiFi
+<br>
+物联网通信协议
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="tech-card">
+
+
+<h3>
+<i class="fa-solid fa-file-code"></i>
+Protocol
+</h3>
+
+
+<p>
+JSON
+<br>
+自定义串口通信协议
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="tech-card">
+
+
+<h3>
+<i class="fa-solid fa-server"></i>
+Backend
+</h3>
+
+
+<p>
+Python · Flask
+<br>
+WebSocket实时数据展示
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="section" id="projects">
+
+
+<h2 class="section-title">
+代表项目
+</h2>
+
+
+
+<div class="project-card">
+
+
+
+<div class="project-header">
+
+
+<h3>
+Tiny_RTGW_RV307
+</h3>
+
+
+
+<span class="badge">
+智能物联网边缘网关
+</span>
+
+
+
+</div>
+
+
+
+
+
+<p class="project-desc">
+
+基于
+
+<strong>
+CH32V307 + ESP32-C6
+</strong>
+
+
+双芯片架构设计的实时物联网网关。
+
+
+实现：
+
+<strong>
+传感器采集 → RT-Thread任务管理 → UART协议通信 → MQTT云端传输 → Flask Web监控 → SQLite数据持久化
+</strong>
+
+
+完整数据链路，并搭载
+
+<strong>
+LVGL本地GUI
+</strong>
+
+人机交互界面。
+
+</p>
+
+
+
+
+
+<div class="project-arch">
+
+
+<div class="arch-node">
+Sensor
+</div>
+
+
+<div class="arch-arrow">
+→
+</div>
+
+
+
+<div class="arch-node header-rt">
+CH32V307
+<br>
+RT-Thread
+</div>
+
+
+
+<div class="arch-split-wrap">
+
+
+
+<div class="arch-split-row">
+
+
+<div class="arch-arrow">
+→
+</div>
+
+
+
+<div class="arch-node header-esp">
+ESP32-C6
+<br>
+UART通信
+</div>
+
+
+
+<div class="arch-arrow">
+→
+</div>
+
+
+
+<div class="arch-node">
+MQTT
+<br>
+Broker
+</div>
+
+
+
+<div class="arch-arrow">
+→
+</div>
+
+
+
+<div class="arch-node header-flask">
+Flask
+<br>
+Web监控
+</div>
+
+
+
+<div class="arch-arrow">
+→
+</div>
+
+
+
+<div class="arch-node">
+SQLite
+<br>
+持久化
+</div>
+
+
+
+</div>
+
+
+
+<div class="arch-split-row">
+
+
+<div class="arch-arrow arch-branch-arrow">
+└→
+</div>
+
+
+
+<div class="arch-node header-gui">
+LVGL TFT-LCD
+<br>
+本地GUI交互
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<h4 class="feature-title">
+核心开发内容
+</h4>
+
+
+
+<ul class="feature-list">
+
+
+<li>
+<strong>
+RT-Thread多线程设计：
+</strong>
+传感器周期采集，互斥锁保护共享数据。
+</li>
+
+
+
+<li>
+<strong>
+UART自定义协议：
+</strong>
+设计 $temp,humidity,light_adc,light_mv# 数据帧。
+</li>
+
+
+
+<li>
+<strong>
+ESP32-C6边缘解析：
+</strong>
+串口数据转换JSON格式。
+</li>
+
+
+
+<li>
+<strong>
+MQTT通信：
+</strong>
+实现远程数据发布。
+</li>
+
+
+
+<li>
+<strong>
+Flask WebSocket：
+</strong>
+实时网页数据显示。
+</li>
+
+
+
+<li>
+<strong>
+CH32本地GUI：
+</strong>
+LVGL驱动TFT-LCD，实时仪表盘与触控参数配置。
+</li>
+
+
+
+<li>
+<strong>
+SQLite数据持久化：
+</strong>
+Python自动持久化MQTT数据，支持历史查询与CSV导出。
+</li>
+
+
+
+</ul>
+
+
+
+
+
+<div class="project-tags">
+
+
+<span>
+RISC-V
+</span>
+
+
+<span>
+RT-Thread
+</span>
+
+
+<span>
+ESP32-C6
+</span>
+
+
+<span>
+MQTT
+</span>
+
+
+<span>
+JSON
+</span>
+
+
+<span>
+Flask
+</span>
+
+
+<span>
+WebSocket
+</span>
+
+
+<span>
+CH32V307
+</span>
+
+
+<span>
+LVGL
+</span>
+
+
+<span>
+SQLite
+</span>
+
+
+</div>
+
+
+
+
+
+
+<a class="btn"
+href="https://github.com/yv798an/Tiny_RTGW_RV307"
+target="_blank">
+
+
+<i class="fa-brands fa-github"></i>
+
+GitHub Repository
+
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="section" id="contact">
+
+
+<h2 class="section-title">
+联系方式
+</h2>
+
+
+
+<ul class="contact-list">
+
+
+<li>
+
+<i class="fa-brands fa-github"></i>
+
+<a href="https://github.com/yv798an">
+
+github.com/yv798an
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<i class="fa-solid fa-envelope"></i>
+
+<a href="mailto:yuanchangyv@gmail.com">
+
+yuanchangyv@gmail.com
+
+</a>
+
+
+</li>
+
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+&#169; 2026 Yuan Changyu &#183; Embedded Software Engineer
+
+
+</footer>
+
+
+
+</body>
+
+
+</html>

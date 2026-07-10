@@ -1,0 +1,563 @@
+/* 全局重置与基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #202124;
+    line-height: 1.6;
+}
+
+/* 导航栏 */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5f6368;
+    margin-left: 24px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1a73e8;
+}
+
+/* 个人信息区 */
+.hero {
+    padding: 64px 0 48px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    color: #5f6368;
+    margin-bottom: 16px;
+}
+
+.hero .summary {
+    font-size: 15px;
+    color: #3c4043;
+    max-width: 640px;
+}
+
+/* 技术栈区域 */
+.section {
+    padding: 32px 0;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.tech-card {
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.2s;
+}
+
+.tech-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tech-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a73e8;
+    margin-bottom: 8px;
+}
+
+.tech-card p {
+    font-size: 13px;
+    color: #5f6368;
+}
+
+/* 项目展示区 */
+.project-card {
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.project-header {
+    margin-bottom: 16px;
+}
+
+.project-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202124;
+}
+
+.project-desc {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 24px;
+    line-height: 1.8;
+}
+
+.project-arch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 28px;
+    font-size: 13px;
+}
+
+.arch-node {
+    background: #e8f0fe;
+    color: #1a73e8;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.arch-arrow {
+    color: #9aa0a6;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.feature-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 12px;
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.feature-list li {
+    font-size: 14px;
+    color: #3c4043;
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.7;
+}
+
+.feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1a73e8;
+}
+
+.feature-list li strong {
+    color: #202124;
+    font-weight: 600;
+}
+
+.feature-list li code {
+    background: #f1f3f4;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.92em;
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: #1967d2;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.project-tags span {
+    font-size: 12px;
+    padding: 4px 12px;
+    background: #e8f0fe;
+    color: #1a73e8;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #1765cc;
+}
+
+/* 联系方式 */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    font-size: 14px;
+    color: #3c4043;
+    margin-bottom: 8px;
+}
+
+.contact-list li span {
+    color: #5f6368;
+    display: inline-block;
+    width: 80px;
+}
+
+.contact-list li a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚 */
+footer {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #9aa0a6;
+    border-top: 1px solid #dadce0;
+    margin-top: 48px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-arch {
+        gap: 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .nav-links a {
+        margin-left: 16px;
+    }
+
+    .project-arch .arch-arrow {
+        display: none;
+    }
+
+    .arch-node {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* --- 新增与优化样式 --- */
+
+/* 头部项目标题与徽章布局 */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.badge {
+    background-color: #f1f3f4;
+    color: #3c4043;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid #dadce0;
+}
+
+/* 图标间距微调 */
+.tech-card h3 i, nav .logo i, .btn i, .contact-list li i {
+    margin-right: 6px;
+}
+
+/* 项目架构拓扑图优化 */
+.project-arch {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px dashed #dadce0;
+}
+.arch-node.header-rt { background: #e6f4ea; color: #137333; } /* 绿色代表RTOS */
+.arch-node.header-esp { background: #feefe3; color: #b06000; } /* 橙色代表无线ESP */
+.arch-node.header-flask { background: #fce8e6; color: #c5221f; } /* 红色代表后端云端 */
+.arch-node.header-gui { background: #f3e8fd; color: #7c3aed; } /* 紫色代表本地GUI */
+
+/* 架构分支布局 */
+.arch-split-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.arch-split-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.arch-branch-arrow {
+    color: #7c3aed;
+}
+
+/* 核心亮点数据卡片 (Highlight Grid) */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+.hl-card {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 14px;
+    text-align: center;
+}
+.hl-num {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a73e8;
+    margin-bottom: 4px;
+}
+.hl-label {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+/* 按钮容器调整 */
+.project-actions {
+    margin-top: 12px;
+}
+
+/* 英雄区技能标签 */
+.summary-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.s-tag {
+    font-size: 13px;
+    padding: 6px 14px;
+    background: #e8f0fe;
+    color: #1a73e8;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.s-tag i {
+    margin-right: 4px;
+}
+
+/* GUI 模拟显示屏 */
+.gui-screen {
+    background: #0d1117;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border: 2px solid #30363d;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.gui-screen .screen-header {
+    text-align: center;
+    font-size: 14px;
+    color: #58a6ff;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #21262d;
+    letter-spacing: 1px;
+}
+
+.gui-screen .screen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.gui-screen .screen-item {
+    text-align: center;
+    background: rgba(88, 166, 255, 0.04);
+    border-radius: 6px;
+    padding: 14px 8px;
+    border: 1px solid rgba(88, 166, 255, 0.10);
+}
+
+.gui-screen .screen-item .s-label {
+    font-size: 11px;
+    color: #8b949e;
+    margin-bottom: 6px;
+}
+
+.gui-screen .screen-item .s-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #3fb950;
+}
+
+.gui-screen .screen-status {
+    text-align: center;
+    font-size: 12px;
+    color: #8b949e;
+    padding-top: 14px;
+    border-top: 1px solid #21262d;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-dot.on {
+    background: #3fb950;
+    box-shadow: 0 0 6px rgba(63, 185, 80, 0.5);
+}
+
+/* SQLite 数据库 Schema 展示 */
+.db-schema {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border-radius: 6px;
+    padding: 20px 24px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 2.0;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    border: 1px solid #333;
+}
+
+.db-schema .sql-kw { color: #569cd6; font-weight: 600; }
+.db-schema .sql-tbl { color: #4ec9b0; }
+.db-schema .sql-num { color: #b5cea8; }
+.db-schema .sql-cmt { color: #6a9955; font-style: italic; }
+
+/* 响应式补充微调 */
+@media (max-width: 600px) {
+    .highlight-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .project-arch .arch-arrow {
+        display: inline-block;
+        transform: rotate(90deg);
+        margin: 4px auto;
+    }
+    .arch-split-wrap {
+        width: 100%;
+    }
+    .arch-split-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .arch-branch-arrow {
+        transform: none;
+    }
+    .gui-screen .screen-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .gui-screen .screen-item .s-value {
+        font-size: 18px;
+    }
+    .db-schema {
+        font-size: 11px;
+        padding: 14px 16px;
+    }
+    .summary-tags {
+        gap: 6px;
+    }
+    .s-tag {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+}
